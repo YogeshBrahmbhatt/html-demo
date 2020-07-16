@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Oswald Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Practice Test | Home Page</title>
+  </head>
+  <body><!--oncontextmenu="return false;"-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Logo</a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse justify-content-start" id="navbarColor02" style="">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#one">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#two">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#four">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#three">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="banner" id="home">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://dummyimage.com/1920x640/dddddd/fff.jpg&text=Slide1" class="d-block w-100" alt="slide1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://dummyimage.com/1920x640/cccccc/fff.jpg&text=Slide2" class="d-block w-100" alt="slide2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://dummyimage.com/1920x640/999999/fff.jpg&text=Slide3" class="d-block w-100" alt="slide3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <section class="find-booking section-space">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">Flight</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">Hotel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#cruise" role="tab" aria-controls="cruise" aria-selected="false">Cruises</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container">
+            <form action="" method="post" class="d-block d-lg-flex">
+              <div class="fields d-block d-lg-flex">
+              <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Search Location"></div>
+              <div class="check-in one-third"><input type="text" id="checkin_date" class="form-control" placeholder="Check-in date"></div>
+              <div class="check-out one-third"><input type="text" id="checkout_date" class="form-control" placeholder="Check-out date"></div>
+              <div class="select-wrap one-third">
+              <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+              <select name="" id="" class="form-control">
+              <option value="">Guest</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4+</option>
+              </select>
+              </div>
+              </div>
+              <input type="submit" class="search-submit btn btn-primary" value="Find Flights">
+            </form>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="container">
+            <form action="" method="post" class="d-block d-lg-flex">
+              <div class="fields d-block d-lg-flex">
+              <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Search Hotel"></div>
+              <div class="check-in one-third"><input type="text" id="checkin_date" class="form-control" placeholder="Check-in date"></div>
+              <div class="check-out one-third"><input type="text" id="checkout_date" class="form-control" placeholder="Check-out date"></div>
+              <div class="select-wrap one-third">
+              <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+              <select name="" id="" class="form-control">
+              <option value="">Guest</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4+</option>
+              </select>
+              </div>
+              </div>
+              <input type="submit" class="search-submit btn btn-primary" value="Find Hotels">
+            </form>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="cruise" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container">
+            <form action="" method="post" class="d-block d-lg-flex">
+              <div class="fields d-block d-lg-flex">
+              <div class="textfield-search one-third one-third-1"><input type="text" class="form-control" placeholder="Search Location"></div>
+              <div class="check-out one-third one-third-1"><input type="text" id="start_date" class="form-control" placeholder="Check-out date"></div>
+              <div class="select-wrap one-third one-third-1">
+              <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+              <select name="" id="" class="form-control">
+              <option value="">Categories</option>
+              <option value="">Suite</option>
+              <option value="">Super Deluxe</option>
+              <option value="">Balcony</option>
+              <option value="">Economy</option>
+              <option value="">Luxury</option>
+              </select>
+              </div>
+              </div>
+              <input type="submit" class="search-submit btn btn-primary" value="Find Cruise">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="one">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <img src="images/about.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-left heading-txt">Welcome To Our Website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, illum, quasi. Odit velit deserunt eligendi unde, enim. Enim fugiat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius ullam impedit architecto debitis facilis!</p>
+            <p><a href="#" class="btn btn-primary py-3 px-4">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="packages section-space" id="two">
+      <h2 class="text-center heading-txt">Our Destinations</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="single-destination relative">
+              <div class="thumb relative">
+                <div class="overlay overlay-bg"></div>
+                <img class="img-fluid" src="images/d1.jpg" alt="mountain-river">
+              </div>
+              <div class="desc">  
+                <a href="#" class="price-btn">$250</a>      
+                <h4>Mountain River</h4>
+                <p>India</p>     
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-destination relative">
+              <div class="thumb relative">
+                <div class="overlay overlay-bg"></div>
+                <img class="img-fluid" src="images/d2.jpg" alt="">
+              </div>
+              <div class="desc">  
+                <a href="#" class="price-btn">$375</a>      
+                <h4>Dream City</h4>
+                <p>Paris</p>      
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-destination relative">
+              <div class="thumb relative">
+                <div class="overlay overlay-bg"></div>
+                <img class="img-fluid" src="images/d3.jpg" alt="">
+              </div>
+              <div class="desc">  
+                <a href="#" class="price-btn">$480</a>      
+                <h4>Cloud Mountain</h4>
+                <p>Sri Lanka</p>      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact bg-image overlay section-space" id="three">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="text-white">Get In Touch With Us</h2>
+            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="mb-0"><a href="#" class="btn btn-warning py-3 px-5 text-white">Contact Us</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-space" id="four">
+      <h2 class="text-center heading-txt">Our Blog</h2>
+      <div class="container">
+          <div class="row blog">
+            <div class="col-md-12">
+              <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: px 15px;">
+                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 02</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: px 15px;">
+                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 03</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: px 15px;">
+                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--.row-->
+                  </div>
+                  <!--.item-->
+                  <div class="carousel-item ">
+                    <div class="row">
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 04</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: px 15px;">
+                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 05</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: px 15px;">
+                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+                            <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 06</span> </div>
+                            <!--Image-->
+                            <figure> <img alt="" src="https://cdn.pixabay.com/photo/2017/02/08/14/25/computer-2048983_960_720.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Data-->
+                            <div class="item-box-blog-data" style="padding: px 15px;">
+                              <p><i class="fa fa-user-o"></i> Admin, <i class="fa fa-comments-o"></i> Comments(3)</p>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                             <div class="mt"> <a href="#">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--.row-->
+                  </div>
+                  <!--.item-->
+                </div>
+                <!--.carousel-inner-->
+              </div>
+              <!--.Carousel-->
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="footer-logo"><a href="#">LOGO</a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
+            <p><a href="#">Learn More</a></p>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="footer-heading"><span>Our Company</span></h3>
+            <ul class="list-unstyled">
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Feature</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="footer-heading"><span>Our Services</span></h3>
+            <ul class="list-unstyled">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="footer-heading"><span>Contact</span></h3>
+            <ul class="list-unstyled">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Support Community</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Our Partners</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright-text">
+              <p>Copyright ©2019 All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/JavaScript">
+
+      $(window).load(function(){
+        /*$(document).keydown(function(event){
+          if(event.keyCode==123){
+            return false;
+          }
+          else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+            return false;
+          }
+        });*/
+
+      });
+
+      $(document).ready(function(){
+        /*document.onkeydown = function(e) {
+          if(event.keyCode == 123) {
+             return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+             return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+             return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+             return false;
+          }
+          if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+             return false;
+          }
+        }
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        });*/
+
+          $(window).scroll(function() {
+            if ($(document).scrollTop() > 100) {
+              $('.header .navbar').addClass('affix');
+            } else {
+              $('.header .navbar').removeClass('affix');
+            }
+          });
+
+
+          $(".header .navbar-nav .nav-item a[href^='#']").click(function(e) {
+            e.preventDefault();
+            var position = $($(this).attr("href")).offset().top;
+            $("body, html").animate({
+              scrollTop: position
+            });
+          });
+      });
+    </script>
+  </body>
+</html>

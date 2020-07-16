@@ -1,0 +1,213 @@
+body {font-family: 'Oswald', sans-serif; font-weight: 300; line-height: 1.6; letter-spacing: 0.5px; color: #000; padding-top: 70px;}
+a {color: #1089ff; text-decoration: none; background-color: transparent;outline: none;}
+.relative {position: relative;}
+.section-space {padding: 75px 0;}
+.heading-txt {position: relative; padding-bottom: 30px; margin-bottom: 30px;}
+.heading-txt:after {content: ""; position: absolute; bottom: 0; left: 50%; width: 50px; height: 2px; background: #1089ff; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);}
+.header .navbar {-webkit-transition:padding 0.2s ease;-moz-transition:padding 0.2s ease;-o-transition:padding 0.2s ease;transition:padding 0.2s ease; }
+.affix {padding-top: 0.2em !important;padding-bottom: 0.2em !important;-webkit-transition:padding 0.2s linear;-moz-transition:padding 0.2s linear;-o-transition:padding 0.2s linear;transition:padding 0.2s linear;}
+section.banner { min-height:calc(100% - 70px); }
+:root { --main-bg-color: rgba(16,137,255,0.85);}
+/*****************************************************
+*
+*About CSS
+*
+*****************************************************/
+.about .heading-txt:after {
+	left: 0; 
+	-webkit-transform: translateX(0); 
+	-ms-transform: translateX(0); 
+	transform: translateX(0);
+}
+/*****************************************************
+*
+*Booking Tabs CSS
+*
+*****************************************************/
+.find-booking .nav.nav-tabs{
+    border: none;
+    color: #fff;
+    background: var(--main-bg-color); /*rgba(16,137,255,0.85);*/
+    border-radius: 0;
+
+}
+.find-booking .nav-tabs .nav-item {
+    margin-bottom: 0px;
+}
+.find-booking .nav-item a.nav-link,
+.find-booking .nav-item a.nav-link.active
+{
+    border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background: rgba(16,137,255,0.85);
+    border-radius: 0;
+    position: relative;
+}
+
+.find-booking .nav-item a.nav-link.active:after
+ {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  border: 15px solid transparent;
+  border-top-color: #ffc107;
+  margin-left: -15px;
+}
+.find-booking .tab-content{
+    background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #ffc107;
+    border-bottom:5px solid #ffc107;
+    padding:30px 25px;
+}
+
+.find-booking .nav-item a.nav-link:hover,
+.find-booking .nav-item a.nav-link:focus
+{
+    border: none;
+    background: #ffc107;
+    color: #fff;
+    border-radius: 0;
+    transition: background 0.20s linear;
+}
+.find-booking .tab-content form .one-third {
+    padding-right: 15px;
+}
+/*.find-booking .tab-content form .one-third:last-of-type {
+    padding-right: 0px;
+}*/
+/*****************************************************
+*
+*Banner CSS
+*
+*****************************************************/
+.banner .carousel-inner .carousel-item .col-sm-6 {margin-bottom: 15px;}
+.banner .carousel-control-next,
+.banner .carousel-control-prev {color: #000; width: 9%;}
+.banner .carousel-control-prev-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");}
+.banner .carousel-control-next-icon {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");}
+/*****************************************************
+*
+*Package CSS
+*
+*****************************************************/
+.packages {width: 100%;}
+.packages .single-destination {-webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-ms-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;}
+.packages .single-destination .thumb { position: relative; }
+.packages .single-destination:hover .overlay-bg {opacity: 1;}
+.packages .single-destination .overlay-bg {
+    background: rgba(4, 9, 30, 0.4);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+.overlay { position: absolute;left: 0;right: 0;top: 0;bottom: 0; }
+.packages .single-destination .desc {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.packages .single-destination:hover .price-btn { opacity: 1 !important; }
+.packages .single-destination .desc .price-btn {
+    background: #f8b600;
+    text-align: center;
+    color: #222;
+    padding: 6px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.packages .single-destination .desc h4 { color: #fff; }
+.packages .single-destination .desc p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+@media all and (max-width: 991px) {
+	.packages .single-destination {
+	    margin-bottom: 30px;
+	}
+}
+/*****************************************************
+*
+* Contact CSS
+*
+******************************************************/
+.bg-image.overlay {position: relative;}
+.bg-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(16,137,255,0.85);
+}
+.bg-image>.container { position: relative; z-index: 1; }
+.text-white { color: #fff!important; }
+/*****************************************************
+*
+*Blog CSS
+*
+*****************************************************/
+.blog .carousel-indicators {left: 0;bottom: -10%;height: 10px;}
+
+/* The colour of the indicators */
+
+.blog .carousel-indicators li {
+  background: #708198;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border: none medium;}
+
+.blog .carousel-indicators .active {background: #1089ff;}
+.item-carousel-blog-block {outline: medium none;padding: 15px;}
+.item-box-blog { border: 1px solid #dadada;text-align: center;z-index: 4;padding: 20px;}
+.item-box-blog-image { position: relative; }
+.item-box-blog-image figure img {width: 100%;height: auto;}
+
+.item-box-blog-date {
+  position: absolute;
+  z-index: 5;
+  padding: 4px 20px;
+  top: -20px;
+  right: 8px;
+  background-color: rgba(16,137,255,0.85);
+}
+
+.item-box-blog-date span {color: #fff;display: block;text-align: center;line-height: 1.2;}
+.item-box-blog-date span.mon {font-size: 18px;}
+.item-box-blog-date span.day {font-size: 16px;}
+.item-box-blog-body {padding: 10px;}
+.item-heading-blog a h5 { margin: 0;line-height: 1;text-decoration:none;transition: color 0.3s; }
+.item-box-blog-heading a {text-decoration: none;}
+.item-box-blog-data p {font-size: 13px;}
+.item-box-blog-data p i {font-size: 12px;}
+.item-box-blog-text {max-height: 100px;overflow: hidden;}
+
+/*****************************************************
+*
+* Footer CSS
+*
+******************************************************/
+.footer {background-color: #f8f9fa;color: #888;font-size: 14px;padding: 4rem 0;}
+.footer ul li { margin-bottom: 10px; }
+.footer .footer-heading {font-size: 16px;color: #000;margin-bottom: 30px;text-transform: uppercase;}
+.footer .footer-heading>span { border-bottom: 2px solid #1089ff; }
+.footer-logo {margin-bottom: 30px;}
+.footer-logo a {font-size: 16px;color: #000;text-decoration: none;font-weight: 400;}
+.footer .copyright-text { padding-top: 7rem;text-align: center; }
